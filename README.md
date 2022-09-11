@@ -75,14 +75,43 @@ How does your output differ …? (What’s the significance of any differences o
 
 <h2> Implementation  </h2>
 
-* #### Hardware requirements 
-(incl. OS) for running your process.
+ #### Hardware requirements 
 
-* #### Software requirements 
-regarding frameworks, tools, etc. required for running your process.
+* Windows:
 
-* #### Validation: 
+    - Processor: Intel i5-6600k (4 core 3.3 GHz) or AMD Ryzen 5 2400 G (4 core 3.6 GHz)
+    - RAM: 8.00 GB
+    - System type: 64-bit operating system, x64-based processor
+    - Operating System: Windows 10
+
+* Apple:
+
+    - Model: MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)
+    - Processor: 2 GHz Quad-Core Intel Core i5
+    - RAM: 16.00 GB
+    - System type: 64-bit operating system, x64-based processor
+    - Operating System: macOS Monterey Version
+       
+
+
+#### Software requirements 
+
+* Framework
+   
+   - Jupyter Notebook or Spyder IDE
+   - python 3.8
+
+* Libraries
+
+   - random
+   - wget
+   - os
+   - pandas
+   - requests
+   - matplotlib
+
+#### Validation: 
 Any sort of advice on how to check that the output of your process makes sense.
 
-* #### Data: 
+#### Data: 
 What input, output, or temporary data is assumed or produced by your process?
