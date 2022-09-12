@@ -124,10 +124,13 @@ This is a threat because the other projects that acknowledge the contributors us
   - Jupyter Notebook or Spyder IDE
   - PyGithub
   - python 3.8
+
+* Libraries
   - pandas
   - matplotlib
-  - Validation
-  - To verify the output, it is best to open the generated files and go through the results in "data/" folder.
+  - wget
+  - random
+  - requests
 
 #### Data: 
 We have used the sample dataset provided by the paper resource on figshare.com as the implementation. The relevant data files used can be found in the ./data folder
