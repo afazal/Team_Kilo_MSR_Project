@@ -85,7 +85,7 @@ Extracting data and performing analysis on the data extracted from github is a b
 
 * #### Process 
 
-The baseline approach made use of the same coding scripts and focused on the same steps as used by the authors of the Paper. The data used in the baseline approach was a similar type of data that our team extracted separately. The enhacement process focuces on a different aspect of the baseline approach. Here we have employed the use of our own data analysis script, which works on randomly generated "Several Contributors List" data instead of a systematically built "All contributors List" as was used by the authors of the paper.
+The baseline approach made use of the same coding scripts and focused on the same steps as used by the authors of the Paper. The data used in the baseline approach was a similar type of data that our team extracted separately. The enhacement process focuces on a different aspect of the baseline approach. Here we have employed the use of our own data analysis script, which works on randomly sampled "Repository" data which we then use to extract contributors list instead of a systematically built "All contributors List" as was used by the authors of the paper.
 
 * #### Data 
 
@@ -93,6 +93,9 @@ We have extracted the data from data dump <https://data.gharchive.org/> (command
 
 * #### Results
 Our initial assumption was that we would observe a different trend when randomly selecting repositories as compared to author's approach of selecting repositories with  ._all_-_contributorsrc_ since small repositories don't generally use   ._all_-_contributorsrc_  but our output when plotted in graphs present almost the same visual image as that of the authors. Within the limited computing power that we had we can conclude that author's analysis provide the correct image of contributors throughout the github and is not limited to a subset containing  ._all_-_contributorsrc_ file.
+
+![ContributionsGraph](https://user-images.githubusercontent.com/8388775/189758463-28902cbd-701d-460d-b5b2-251e5f46f36e.png)
+
 
 
 <h2> Implementation  </h2>
