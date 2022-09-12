@@ -68,13 +68,16 @@ The output we get from the executions is almost similar to the one done by the o
 
 * #### Threat 
 
-— Call out the threat to validity.
+From the model of acknowledgement of Github contributorship, only a small sample from among the overall projects is used. The current contributorship does not take into account the the list of github datasets wihout contributors which creates a problem.
+
 
 * #### Traces 
 
 “Our sample is biased towards projects willing to go out of their way to acknowledge contributors using a method that is not widely used, which is a particularly prosocial behavior. Hence, the group of acknowledged the contributors might be particularly broad relative to a typical OSS project”. 
 
 “The code that appears on GitHub is itself a skewed sample of OSS software so our results might not generalize to other services or populations” [18].   
+
+"On a technical note, we have filtered bots using simple pattern matched on names combined with a hand-crafted list of bots. More exhaustive filtration techniques could reduce this threat in the future" [41]
 
 * #### Theory 
 
