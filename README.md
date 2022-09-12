@@ -1,28 +1,87 @@
-<h1> Objective of Reproduction </h1>
+<h1> Note </h1>
 
-The objective of this reproduction is to test whether the analysis of the contributorship mentioned in the paper can be reproduced and if similar results can be obtained while using various repositories.
+This is a MSR study as part of the MSR course 2022 at UniKo, CS department, SoftLang Team
 
-<h2>Description</h2>
+<h2> Names of team/students </h2>
 
+**Team Name**: Kilo
+
+**Members:**
+
+  * Ahmed Fazal (afazal@uni-koblenz.de)
+  * Usama Moin (umoin@uni-koblenz.de)
+  * Tahir Iqbal (tahiriqbal@uni-koblenz.de)
+
+<h2> Underlying paper </h2>
+
+— DBLP link
+
+<h2> Reproduced baseline  </h2>
+
+### Objective of reproduction 
+ 
+* #### Description
+    
 This paper characterizes contributor acknowledgment models in open source by analyzing thousands of projects that use a model called All Contributors. It focuses on the life cycle of projects through the model's lens and contrast its representation of contributorship. We would be reproducing the data pipeline for the list of contributors and contribution history.
+  — What is actually reproduced? (What part of the study?)
+  
+* #### Input data
 
-<h2>Input data</h2>
 The input data is extracted from GitHub API consisting of:
 
 - Forked results and fork parents
 - Repositories list and shortlisted repositories list
 - Contributors list and size
-- We characterize contributor acknowledgment models in open source, analyze the life cycle of projects through different models.
-- Findings of reproduction
-- Process Delta
-- The process we followed for the project is almost identical to the one the author followed except in some cases we had to change libraries since the previous ones are deprecated or no longer functional. Moreover we did some optimisations as well. For the purpose of replication in some cases we had to use similar data as was used by the author since github rate limits you after a while unless you have an academic or research license.
 
-<h2>Output data</h2>
+provide links to the paper’s repo, if possible, and to your git project.
+
+* #### Output data
+
 
 - The output we get from the executions is similar to the one done by the original author of the paper
 Implementation of reproduction.
 
+provide links to the paper’s repo, if possible, and to your git project.
 
+<h3> Findings </h3> 
+ 
+* #### Process delta:
+
+- We characterize contributor acknowledgment models in open source, analyze the life cycle of projects through different models.
+
+How does your process differ from what’s described in the paper or its repo? (Why?)
+
+* #### Output delta:
+
+- The process we followed for the project is almost identical to the one the author followed except in some cases we had to change libraries since the previous ones are deprecated or no longer functional. Moreover we did some optimisations as well. For the purpose of replication in some cases we had to use similar data as was used by the author since github rate limits you after a while unless you have an academic or research license.
+
+How does your output differ …? (What’s the significance of any differences observed?)
+
+<h2> MSR study enhancement </h2>
+
+* #### Threat 
+— Call out the threat to validity.
+
+* #### Traces 
+— Identify traces (quotes/references) in the paper related to the threat.
+
+* #### Theory 
+— Describe your theory as to why this is a threat.
+
+* ####  Methodology 
+— Describe your planned methodology.
+
+* #### Feasibility 
+— What concessions did you make so that the experiment fits in this course?
+
+* #### Process 
+— Extra process, on top of baseline.
+
+* #### Data 
+— Extra data, on top of baseline.
+
+* #### Results 
+— What are you findings / your interpretation of your results?
 
 
 <h2> Implementation  </h2>
@@ -65,73 +124,5 @@ We have used the sample dataset provided by the paper resource on figshare.com a
 
 
 
-<h2> Names of team/students </h2>
 
-**Team Name**: Kilo
-
-**Members:**
-
-  * Ahmed Fazal (afazal@uni-koblenz.de)
-  * Usama Moin (umoin@uni-koblenz.de)
-  * Tahir Iqbal (tahiriqbal@uni-koblenz.de)
-
-<h2> Underlying paper </h2>
-
-— DBLP link
-
-<h2> Reproduced baseline  </h2>
-
-### Objective of reproduction 
- 
-* #### Description
-
-    (1-2 sentences) 
-  — What is actually reproduced? (What part of the study?)
-  
-* #### Input data
-
-(1+ lines) 
-— provide links to the paper’s repo, if possible, and to your git project.
-
-* #### Output data
-
-(1+ lines) 
-— provide links to the paper’s repo, if possible, and to your git project.
-
-<h3> Findings </h3> 
- 
-* #### Process delta:
-
-How does your process differ from what’s described in the paper or its repo? (Why?)
-
-* #### Output delta:
-
-How does your output differ …? (What’s the significance of any differences observed?)
-
-
-<h2> MSR study enhancement </h2>
-
-* #### Threat 
-— Call out the threat to validity.
-
-* #### Traces 
-— Identify traces (quotes/references) in the paper related to the threat.
-
-* #### Theory 
-— Describe your theory as to why this is a threat.
-
-* ####  Methodology 
-— Describe your planned methodology.
-
-* #### Feasibility 
-— What concessions did you make so that the experiment fits in this course?
-
-* #### Process 
-— Extra process, on top of baseline.
-
-* #### Data 
-— Extra data, on top of baseline.
-
-* #### Results 
-— What are you findings / your interpretation of your results?
 
