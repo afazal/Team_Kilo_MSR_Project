@@ -90,12 +90,19 @@ This is a threat because the other projects that acknowledge the contributors us
 — What concessions did you make so that the experiment fits in this course?
 
 * #### Process 
+
+The baseline approach made use of the same coding scripts and focused on the same steps as used by the authors of the Paper. The data used in the baseline approach was a similar type of data that our team extracted separately. The enhacement process focuces on a different aspect of the baseline approach. Here we have employed the use of our own data analysis script, which works on randomly generated "Several Contributors List" data instead of a systematically built "All contributors List" as was used by the authors of the paper.
+
 — Extra process, on top of baseline.
 
 * #### Data 
-— Extra data, on top of baseline.
+
+We have extracted the data from data dump <https://data.gharchive.org/> (commands like wget to get the https data) whihc are essesntially /json files. We have used the python code to extract the repositories with the contributors list and randonly selected them to remove biases.=. The data is then further analysed to produce visuals, predominantly the bar chart (included in the "contributors.ipynb" file in process folder) which act as a benchmark comparison between the data output done in the paper and the reproduced study.
+
+- Extra data, on top of baseline.
 
 * #### Results 
+
 — What are you findings / your interpretation of your results?
 
 
