@@ -14,17 +14,19 @@ This is a MSR study as part of the MSR course 2022 at UniKo, CS department, Soft
 
 <h2> Underlying paper </h2>
 
-— DBLP link
+The DBLP Link for the Paper used in this Assignments is as follows:
+
+<https://dblp.org/rec/conf/msr/YoungCMTHB21.html>
 
 <h2> Reproduced baseline  </h2>
 
 ### Objective of reproduction 
  
-* #### Description
-    
-This paper characterizes contributor acknowledgment models in open source by analyzing thousands of projects that use a model called All Contributors. It focuses on the life cycle of projects through the model's lens and contrast its representation of contributorship. We would be reproducing the data pipeline for the list of contributors and contribution history.
-  — What is actually reproduced? (What part of the study?)
-  
+* #### Description: 
+
+This paper characterizes contributor acknowledgment models in open source by analyzing thousands of projects that use a model called All Contributors. It focuses on the life cycle of projects through the model's lens and contrast its representation of contributorship. We would be reproducing the data pipeline for the list of contributors and contribution history
+      
+
 * #### Input data
 
 The input data is extracted from GitHub API consisting of:
@@ -33,29 +35,34 @@ The input data is extracted from GitHub API consisting of:
 - Repositories list and shortlisted repositories list
 - Contributors list and size
 
-provide links to the paper’s repo, if possible, and to your git project.
+The link to the Input Data for Team Kilo's Git Project is as follows:
+
+<https://github.com/afazal/Team_Kilo_Poject_MSR/tree/main/data/sample%20data>
+
 
 * #### Output data
 
 
-- The output we get from the executions is similar to the one done by the original author of the paper
+The output we get from the executions is similar to the one done by the original author of the paper
 Implementation of reproduction.
 
-provide links to the paper’s repo, if possible, and to your git project.
+The link to the Output Data for Team Kilo's Git Project is as follows:
+
+<https://github.com/afazal/Team_Kilo_Poject_MSR/tree/main/data/output%20data>
+
 
 <h3> Findings </h3> 
  
 * #### Process delta:
 
-- We characterize contributor acknowledgment models in open source, analyze the life cycle of projects through different models.
+The process we followed for the project is almost identical to the one the author followed except in some cases we had to change libraries since the previous ones are deprecated or no longer functional. Moreover we did some optimisations as well. For the purpose of replication in some cases we had to use similar data as was used by the author since github rate limits you after a while unless you have an academic or research license.
 
-How does your process differ from what’s described in the paper or its repo? (Why?)
+
 
 * #### Output delta:
 
-- The process we followed for the project is almost identical to the one the author followed except in some cases we had to change libraries since the previous ones are deprecated or no longer functional. Moreover we did some optimisations as well. For the purpose of replication in some cases we had to use similar data as was used by the author since github rate limits you after a while unless you have an academic or research license.
+The output we get from the executions is almost similar to the one done by the original author of the paper. The visualizations that we have generated from our dataset matches the output visuals that are provided in the paper. The few differences are due to the formatting of the dataset as well as randomized github api calls for generating the dataset.
 
-How does your output differ …? (What’s the significance of any differences observed?)
 
 <h2> MSR study enhancement </h2>
 
