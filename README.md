@@ -1,3 +1,4 @@
+
 <h1> Note </h1>
 
 This is a MSR study as part of the MSR course 2022 at UniKo, CS department, SoftLang Team
@@ -29,16 +30,9 @@ This paper characterizes contributor acknowledgment models in open source by ana
 
 * #### Input data
 
-The input data is extracted from GitHub API consisting of:
-
-- Forked results and fork parents
-- Repositories list and shortlisted repositories list
-- Contributors list and size
-
-The link to the Input Data for Team Kilo's Git Project is as follows:
-
-<https://github.com/afazal/Team_Kilo_Poject_MSR/tree/main/data/sample%20data>
-
+The input data is extracted from Github Archive consisting of:
+- All the actions performed on github including Commit, Push, etc along with details about the repositories involved.
+The process to generate the input data is included in python code, we didn't include it in the github project due to the size of the input files.
 
 * #### Output data
 
@@ -84,26 +78,21 @@ From the model of acknowledgement of Github contributorship, only a small sample
 This is a threat because the other projects that acknowledge the contributors using a less widely used method are not taken into consideration which creates a bias in the results. The github code are from the sample of OSS software which may not take other services into consideration. Also, there is an assumption that each contributor logins are a single user, but they could be instances where user names are provided without login.
 
 * ####  Methodology 
-— Describe your planned methodology.
+The original study focused on repositories having ._all_-_contributorsrc_ file, so it was missing out on a huge chunk of open source software repositories which did not include this file as a result the results don't cover the trends over all of github. To bypass that we started by randomly selecting some repositories which were active during the year 2021, performed analysis on that data and extracted list of contributors along with their basic details against each repository and then compared the results with that in the original paper.
 
 * #### Feasibility 
-— What concessions did you make so that the experiment fits in this course?
+Extracting data and performing analysis on the data extracted from github is a big data problem which requires expensive resources with high computing powers, as the data involving number of actions performed in github during a single hour can take a minimum of 50mb and a maximum of 10 gb data. To make the problem simpler instead of gathering all those data and performing analysis on a personal computer, we went ahead and randomly sampled the data for the year 2021 in order to extract a small dataset to study the trends.
 
 * #### Process 
 
 The baseline approach made use of the same coding scripts and focused on the same steps as used by the authors of the Paper. The data used in the baseline approach was a similar type of data that our team extracted separately. The enhacement process focuces on a different aspect of the baseline approach. Here we have employed the use of our own data analysis script, which works on randomly generated "Several Contributors List" data instead of a systematically built "All contributors List" as was used by the authors of the paper.
 
-— Extra process, on top of baseline.
-
 * #### Data 
 
-We have extracted the data from data dump <https://data.gharchive.org/> (commands like wget to get the https data) whihc are essesntially /json files. We have used the python code to extract the repositories with the contributors list and randonly selected them to remove biases.=. The data is then further analysed to produce visuals, predominantly the bar chart (included in the "contributors.ipynb" file in process folder) which act as a benchmark comparison between the data output done in the paper and the reproduced study.
+We have extracted the data from data dump <https://data.gharchive.org/> (commands like wget to get the https data) which are essesntially compressed json files. We then used the python code to extract the repositories with the contributors list and randomly selected some of them to remove biases. The data is then further analysed to produce visuals, predominantly the bar chart (included in the "contributors.ipynb" file in process folder) which act as a benchmark comparison between the data output done in the paper and the reproduced study.
 
-- Extra data, on top of baseline.
-
-* #### Results 
-
-— What are you findings / your interpretation of your results?
+* #### Results
+Our initial assumption was that we would observe a different trend when randomly selecting repositories as compared to author's approach of selecting repositories with  ._all_-_contributorsrc_ since small repositories don't generally use   ._all_-_contributorsrc_  but our output when plotted in graphs present almost the same visual image as that of the authors. Within the limited computing power that we had we can conclude that author's analysis provide the correct image of contributors throughout the github and is not limited to a subset containing  ._all_-_contributorsrc_ file.
 
 
 <h2> Implementation  </h2>
@@ -141,13 +130,4 @@ We have extracted the data from data dump <https://data.gharchive.org/> (command
   - wget
   - random
   - requests
-
-#### Data: 
-We have used the sample dataset provided by the paper resource on figshare.com as the implementation. The relevant data files used can be found in the ./data folder
-
-
-
-
-
-
 
