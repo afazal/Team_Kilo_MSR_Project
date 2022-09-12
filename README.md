@@ -67,13 +67,18 @@ The output we get from the executions is almost similar to the one done by the o
 <h2> MSR study enhancement </h2>
 
 * #### Threat 
+
 — Call out the threat to validity.
 
 * #### Traces 
-— Identify traces (quotes/references) in the paper related to the threat.
+
+“Our sample is biased towards projects willing to go out of their way to acknowledge contributors using a method that is not widely used, which is a particularly prosocial behavior. Hence, the group of acknowledged the contributors might be particularly broad relative to a typical OSS project”. 
+
+“The code that appears on GitHub is itself a skewed sample of OSS software so our results might not generalize to other services or populations” [18].   
 
 * #### Theory 
-— Describe your theory as to why this is a threat.
+
+This is a threat because the other projects that acknowledge the contributors using a less widely used method are not taken into consideration which creates a bias in the results. The github code are from the sample of OSS software which may not take other services into consideration. Also, there is an assumption that each contributor logins are a single user, but they could be instances where user names are provided without login.
 
 * ####  Methodology 
 — Describe your planned methodology.
